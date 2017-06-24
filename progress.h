@@ -9,6 +9,10 @@
 #include <stdbool.h>
 #include <time.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
  * for macOS
  */
@@ -113,4 +117,8 @@ void
 progress_inspect (progress_t *progress);
 
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
